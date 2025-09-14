@@ -1,0 +1,11 @@
+.Deal {
+  width: 100%;
+  max-width: 1175px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=DealHot.css.map */

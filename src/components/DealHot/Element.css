@@ -1,0 +1,25 @@
+.DealElement {
+  padding-block: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: 0.1s ease 0s;
+}
+.DealElement img {
+  height: 45px;
+  width: 45px;
+}
+.DealElement p {
+  font-size: 14px;
+  width: 70%;
+  text-align: center;
+}
+.DealElement:hover {
+  transform: translateY(-5px);
+  transition: 0.2s ease 0s;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Element.css.map */
