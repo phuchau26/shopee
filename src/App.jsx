@@ -26,6 +26,10 @@ function App() {
           <Top/>
           <Today/>
        </div>
+
+        <div className="copyright">
+          © Copyright by HCMUS-HauProMax
+        </div>
     </>
 
   )
