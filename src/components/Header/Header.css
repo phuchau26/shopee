@@ -36,6 +36,8 @@ html, body, #root {
   align-items: center;
   flex-direction: column;
   padding-block: 10px;
+  position: fixed;
+  z-index: 10;
 }
 .Header.inner {
   width: max-content;
@@ -114,7 +116,7 @@ html, body, #root {
 }
 .Header .cate ul {
   padding-left: 30px;
-  width: 600px;
+  width: 800px;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -122,6 +124,8 @@ html, body, #root {
 }
 .Header .cate ul li {
   font-size: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=Header.css.map */

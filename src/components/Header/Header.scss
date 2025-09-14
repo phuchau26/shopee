@@ -35,12 +35,15 @@ html, body, #root {
   width: 100vw;   /* đảm bảo full chiều ngang viewport */
   min-width: 100%; /* backup khi có flex container */
   
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
   padding-block: 10px;
+  position: fixed;
+  z-index: 10;
 
   &.inner {
     width: max-content;
@@ -54,7 +57,7 @@ html, body, #root {
     max-width: var(--max-width);
     justify-content: space-between;
 
-    ul {
+    & ul {
         list-style-type: none;
         @extend %center;
         gap: 10px;
@@ -144,14 +147,15 @@ html, body, #root {
     margin-top: 10px;
     ul {
         padding-left: 30px;
-        width: 600px;
+        width: 800px;
         list-style-type: none;
         display: flex;
         justify-content: space-between;
         align-items: center;
-
         li {
             font-size: 12px;
+            margin-left: 10px;
+            margin-right: 10px;
         }
     }
   }

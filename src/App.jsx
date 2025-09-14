@@ -1,6 +1,10 @@
 import Header from './components/Header/Header.jsx'
 import Banner from './components/Banner/Banner.jsx'
 import DealHot from './components/DealHot/DealHot.jsx'
+import Category from './components/Category/Category.jsx'
+import Flash from './components/Flash/Flash.jsx'
+import Advertisement from './components/Advertisement/Advertisement.jsx'
+import Top from './components/Top/Top.jsx'
 import './App.css'
 
 
@@ -12,6 +16,13 @@ function App() {
        <div className='inner-mid'>
           <Banner/>
           <DealHot/>
+       </div>
+
+       <div className="body">
+          <Category/>
+          <Flash/>
+          <Advertisement/>
+          <Top/>
        </div>
     </>
 
