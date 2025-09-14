@@ -5,6 +5,7 @@ import Category from './components/Category/Category.jsx'
 import Flash from './components/Flash/Flash.jsx'
 import Advertisement from './components/Advertisement/Advertisement.jsx'
 import Top from './components/Top/Top.jsx'
+import Today from './components/Today/Today.jsx'
 import './App.css'
 
 
@@ -23,6 +24,7 @@ function App() {
           <Flash/>
           <Advertisement/>
           <Top/>
+          <Today/>
        </div>
     </>
 
