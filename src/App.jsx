@@ -15,11 +15,12 @@ function App() {
     <>
       <Header/>
        <div className='inner-mid'>
-          <Banner/>
-          <DealHot/>
+          
        </div>
 
        <div className="body">
+          <Banner/>
+          <DealHot/>
           <Category/>
           <Flash/>
           <Advertisement/>
