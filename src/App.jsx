@@ -15,12 +15,11 @@ function App() {
     <>
       <Header/>
        <div className='inner-mid'>
-          
+          <Banner/>
+          <DealHot/>
        </div>
 
        <div className="body">
-          <Banner/>
-          <DealHot/>
           <Category/>
           <Flash/>
           <Advertisement/>
@@ -28,6 +27,8 @@ function App() {
           <Today/>
        </div>
 
+        <DealHot/>
+        <DealHot/>
         <div className="copyright">
           © Copyright by HCMUS-HauProMax
         </div>

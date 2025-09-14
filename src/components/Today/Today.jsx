@@ -78,7 +78,7 @@ const Today = () => {
       discount: 18,
       url: "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lud0l0s9311t4d_tn.webp",
       name: "Bình Giữ Nhiệt Nắp Kim Cương Inox 304 chân không 2 Lớp",
-      price: "10",
+      price: "10.000",
       sale: 10
     },
     {
