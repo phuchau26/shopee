@@ -27,8 +27,11 @@ function App() {
           <Today/>
        </div>
 
-        <DealHot/>
-        <DealHot/>
+       <div className='inner-mid'>
+          <Banner/>
+          <DealHot/>
+       </div>
+       
         <div className="copyright">
           © Copyright by HCMUS-HauProMax
         </div>
