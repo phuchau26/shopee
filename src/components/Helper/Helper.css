@@ -1,22 +1,3 @@
-.adver {
-  display: flex;
-  width: 100%;
-  max-width: 900px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 160px;
-  gap: 5px;
-}
-.adver__1 img {
-  height: 235px;
-}
-.adver__2 {
-  display: flex;
-  flex-direction: column;
-}
-.adver__2 img {
-  height: 115px;
-  margin-bottom: 5px;
-}
+
 
 /*# sourceMappingURL=Helper.css.map */

@@ -1,6 +1,4 @@
 import Header from './components/Header/Header.jsx'
-import Banner from './components/Banner/Banner.jsx'
-import DealHot from './components/DealHot/DealHot.jsx'
 import Category from './components/Category/Category.jsx'
 import Flash from './components/Flash/Flash.jsx'
 import Advertisement from './components/Advertisement/Advertisement.jsx'
@@ -15,10 +13,6 @@ function App() {
   return (
     <>
       <Header/>
-       <div className='inner-mid'>
-          <Banner/>
-          <DealHot/>
-       </div>
 
        <div className="body">
           <Category/>
