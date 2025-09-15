@@ -1,3 +1,68 @@
+.banner {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 160px;
+  gap: 5px;
+}
+.banner__1 img {
+  height: 235px;
+  width: 796px;
+}
+.banner__2 {
+  display: flex;
+  flex-direction: column;
+}
+.banner__2 img {
+  height: 115px;
+  margin-bottom: 5px;
+}
 
+.banner-outer {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__deal {
+  width: 100%;
+  max-width: 1175px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.banner__element {
+  padding-block: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: 0.1s ease 0s;
+  width: 150px;
+  height: 100px;
+}
+.banner__element img {
+  height: 45px;
+  width: 45px;
+}
+.banner__element p {
+  font-size: 14px;
+  width: 70%;
+  text-align: center;
+}
+.banner__element:hover {
+  transform: translateY(-5px);
+  transition: 0.2s ease 0s;
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=Helper.css.map */

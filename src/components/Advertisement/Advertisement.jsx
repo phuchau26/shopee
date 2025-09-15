@@ -72,7 +72,7 @@ const Advertisement = () => {
       </div>
 
       <div className="element__2">
-        <div className="banner">
+        <div className="banner--advertisement">
             <img src="./ad-4.png" alt="" />
         </div>
 

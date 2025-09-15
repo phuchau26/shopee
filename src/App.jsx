@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Header/>
-
+      <Helper/>
        <div className="body">
           <Category/>
           <Flash/>
@@ -25,8 +25,6 @@ function App() {
         <div className="copyright">
           © Copyright by HCMUS-HauProMax
         </div>
-
-        <Helper/>
     </>
 
   )

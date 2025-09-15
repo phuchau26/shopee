@@ -88,10 +88,10 @@
   cursor: pointer;
 }
 
-.banner img {
+.banner--advertisement img {
   width: 390px;
 }
-.banner img:hover {
+.banner--advertisement img:hover {
   cursor: pointer;
 }
 
