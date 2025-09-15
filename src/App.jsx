@@ -6,6 +6,7 @@ import Flash from './components/Flash/Flash.jsx'
 import Advertisement from './components/Advertisement/Advertisement.jsx'
 import Top from './components/Top/Top.jsx'
 import Today from './components/Today/Today.jsx'
+import Helper from './components/Helper/Helper.jsx'
 import './App.css'
 
 
@@ -27,14 +28,11 @@ function App() {
           <Today/>
        </div>
 
-       <div className='inner-mid'>
-          <Banner/>
-          <DealHot/>
-       </div>
-       
         <div className="copyright">
           © Copyright by HCMUS-HauProMax
         </div>
+
+        <Helper/>
     </>
 
   )
