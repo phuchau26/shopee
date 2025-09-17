@@ -1,0 +1,98 @@
+.Advertisement {
+  background-color: white;
+  width: 1200px;
+}
+.Advertisement .element__1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid rgb(233, 232, 232);
+}
+.Advertisement .element__1 .qc {
+  display: flex;
+}
+.Advertisement .element__1 .qc span {
+  text-transform: uppercase;
+  color: rgb(229, 31, 31);
+  font-size: 20px;
+  margin-right: 30px;
+}
+.Advertisement .element__1 .qc span:hover {
+  cursor: pointer;
+}
+.Advertisement .element__1 .qc ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+.Advertisement .element__1 .qc ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+.Advertisement .element__1 .qc ul li:hover {
+  cursor: default;
+  color: black;
+}
+.Advertisement .element__1 .qc .icon {
+  color: rgb(229, 31, 31);
+  font-size: 20px;
+  margin-right: 10px;
+}
+.Advertisement .element__1 span {
+  text-transform: capitalize;
+  color: rgb(229, 31, 31);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.Advertisement .element__1 span #right {
+  font-size: 20px;
+}
+.Advertisement .element__2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Advertisement .element__2 .categoryAd {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ItemAd {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.ItemAd img {
+  width: 200px;
+}
+.ItemAd span {
+  font-size: 20px;
+  color: rgb(229, 31, 31);
+  position: absolute;
+  width: max-content;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.ItemAd:hover {
+  cursor: pointer;
+}
+
+.banner--advertisement img {
+  width: 390px;
+}
+.banner--advertisement img:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Advertisement.css.map */

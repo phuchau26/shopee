@@ -1,0 +1,90 @@
+.innerFlash {
+  background-color: white;
+  width: 1200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.innerFlash .element__1 {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.innerFlash .element__1--com {
+  display: flex;
+  gap: 10px;
+}
+.innerFlash .element__1 img {
+  height: 25px;
+  margin-left: 10px;
+}
+.innerFlash .element__1 p {
+  color: #ff7337;
+  margin-right: 20px;
+}
+.innerFlash .element__1 p:hover {
+  cursor: pointer;
+}
+.innerFlash .element__1 .countDown {
+  display: flex;
+  gap: 10px;
+}
+.innerFlash .element__1 .countDown span {
+  padding-inline: 2px;
+  background-color: black;
+  color: white;
+  height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  border-radius: 3px;
+}
+.innerFlash .element__2 {
+  display: flex;
+}
+.innerFlash .element__2 .ItemFlash {
+  width: 200px;
+  height: 250px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.innerFlash .element__2 .ItemFlash img {
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+}
+.innerFlash .element__2 .ItemFlash .discount {
+  color: #f74f1c;
+  background-color: rgb(241, 238, 40);
+  width: max-content;
+  position: absolute;
+  top: 12px;
+  right: 0px;
+}
+.innerFlash .element__2 .ItemFlash .price {
+  color: #f36224;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.innerFlash .element__2 .ItemFlash p {
+  background-color: #FFBDA6;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  padding-inline: 20px;
+  padding-block: 3px;
+  border-radius: 20px;
+}
+.innerFlash .element__2 .ItemFlash:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Flash.css.map */
