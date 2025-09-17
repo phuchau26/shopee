@@ -1,0 +1,74 @@
+.Top {
+  width: 1200px;
+  background-color: white;
+  margin-top: 20px;
+}
+.Top .element__1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+.Top .element__1 span {
+  text-transform: uppercase;
+  color: #F58B2D;
+  margin: 20px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.Top .element__1 #all {
+  text-transform: capitalize;
+  font-size: 17px;
+  font-weight: 500;
+}
+.Top .element__1 #all:hover {
+  cursor: pointer;
+}
+.Top .element__2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.TopElement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.TopElement img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+.TopElement #top {
+  height: 40px;
+  width: 32px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.TopElement p {
+  width: 100%;
+  color: white;
+  background-color: #BDBDBD;
+  padding-block: 5px;
+  text-align: center;
+}
+.TopElement span {
+  font-size: 21px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  color: #4b4b4b;
+}
+.TopElement:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Top.css.map */
