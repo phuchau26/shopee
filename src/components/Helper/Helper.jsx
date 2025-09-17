@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Helper.css"
 import Element from './Element'
+import {useState, useEffect} from 'react'
 
 const Helper = () => {
   const listDeal = [
@@ -34,11 +35,59 @@ const Helper = () => {
       },
   
   ]
+
+  const [index, setIndex] = useState(0)
+  const len = 8
+
+  const handleLeft = () => {
+    if (index > 0){
+      setIndex((index-1)%len)
+    }
+  }
+  
+  const handleRight = () => {
+    setIndex((prevIndex) => (prevIndex + 1) % len)
+  }
+
+
+  useEffect(()=>{
+    const interval = setInterval(()=>{handleRight()}, 3000)
+    return () => clearInterval(interval)
+  }, [])
+  
   return (
     <div className='banner-outer'>
       <div className='banner'>
           <div className='banner__1'>
-              <img src="./ad-1.png" alt="" />
+              <div className='banner__1--box'>
+                <div className="banner__1--slider">
+                <div
+                    className="banner__1--track"
+                    style={{ transform: `translateX(-${index * 100}%)` }}
+                >
+                    {[...Array(len)].map((_, i) => (
+                    <img
+                        key={i}
+                        src={`./ad/ad-${i + 1}.jpg`}
+                        alt=""
+                        className="banner__1--slide"
+                    />
+                    ))}
+                </div>
+                </div>
+
+                <button className='banner__1--leftButton' onClick={handleLeft}>{"<"}</button>
+                <button className='banner__1--rightButton' onClick={handleRight}>{">"}</button>
+                <div className="banner__1--dotList">
+                    {[...Array(len)].map((_, i) => (
+                        <span
+                        key={i}
+                        className={`banner__1--dot ${i === index ? "active-dot" : ""}`}
+                        onClick={() => setIndex(i)}
+                        />
+                    ))}
+                </div>
+            </div>
           </div>
   
           <div className='banner__2'>
