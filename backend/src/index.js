@@ -31,9 +31,4 @@ if (process.env.NODE_ENV === 'production'){
     })
 }
 
-
-
-app.listen(port, () => {
-    console.log("Server đang chạy trên cổng: ", port)
-})
-
+export default app
