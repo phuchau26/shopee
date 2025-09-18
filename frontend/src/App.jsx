@@ -20,7 +20,7 @@ function App() {
 
   const fetchProducts = async () => {
     try {
-      const res = await axios.get("http://localhost:5001/admin")
+      const res = await axios.get("https://shopee-rho-beryl.vercel.app/")
       setProductBuffer(res.data)
 
     } catch (error) {
