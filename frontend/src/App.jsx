@@ -6,7 +6,6 @@ import Top from './components/Top/Top.jsx'
 import Today from './components/Today/Today.jsx'
 import Helper from './components/Helper/Helper.jsx'
 import './App.css'
-import axios from 'axios'
 import { useState, useEffect } from 'react'
 
 
@@ -20,8 +19,9 @@ function App() {
 
   const fetchProducts = async () => {
     try {
-      const res = await axios.get("https://shopee-rho-beryl.vercel.app/admin")
-      setProductBuffer(res.data)
+      fetch("https://shopee-rho-beryl.vercel.app/admin") // gọi backend local
+      .then((res) => res.json())
+      .then((data) => setProductBuffer(data.data))
 
     } catch (error) {
       console.log("Lỗi khi truy xuất products: ", error)
