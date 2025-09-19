@@ -15,7 +15,7 @@ const app = express()
 app.use(express.json())
 
 if (process.env.NODE_ENV !== 'production'){
-    app.use(cors({origin: "http://localhost:5173"}))
+    app.use(cors())
 }
 
 
