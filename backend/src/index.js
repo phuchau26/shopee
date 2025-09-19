@@ -11,12 +11,28 @@ const __dirname = path.resolve()
 
 const app = express()
 
-//middleware
+
+// middleware
 app.use(express.json())
 
-if (process.env.NODE_ENV !== 'production'){
-    app.use(cors())
-}
+// Cho phép cả local & production
+const allowedOrigins = [
+  "http://localhost:3000",       // nếu bạn chạy frontend ở port 3000
+  "http://localhost:5173",       // nếu dùng Vite
+  "https://shopeeapp.vercel.app" // domain thật trên Vercel
+]
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true)
+    } else {
+      callback(new Error("Not allowed by CORS"))
+    }
+  },
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}))
 
 
 connectDB()

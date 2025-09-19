@@ -19,7 +19,7 @@ function App() {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch('https://shopee-rho-beryl.vercel.app/admin')
+      const response = await fetch('http://localhost:5001/admin')
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`)
