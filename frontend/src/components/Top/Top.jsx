@@ -45,8 +45,8 @@ const Top = () => {
 
         <div className="element__2">
             {
-                listTop.map((item) => (
-                    <Element url={item.url} sale={item.sale} name={item.name}/>
+                listTop.map((item, index) => (
+                    <Element url={item.url} sale={item.sale} name={item.name} key={index}/>
                 ))
             }
         </div>

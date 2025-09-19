@@ -95,8 +95,8 @@ const Category = () => {
         </div>
         <div className='list--2'>
             {
-                listCategory.map((item) => (
-                    <Element url={item.url} title={item.title}/>
+                listCategory.map((item, index) => (
+                    <Element url={item.url} title={item.title} key={index}/>
                 ))
             }
         </div>

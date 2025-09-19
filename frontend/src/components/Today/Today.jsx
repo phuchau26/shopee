@@ -12,8 +12,8 @@ const Today = (props) => {
     
         <div className="element__2">
             {
-              props.productList.map((item) => (
-                <Element discount={item.discount} url={item.url} price={item.price} sale={item.sale} name={item.name}/>
+              props.productList.map((item, index) => (
+                <Element discount={item.discount} url={item.url} price={item.price} sale={item.sale} name={item.name} key={index}/>
               ))
             }
         </div>

@@ -19,12 +19,14 @@ function App() {
 
   const fetchProducts = async () => {
     try {
-      fetch("https://shopee-rho-beryl.vercel.app/admin") // gọi backend local
-      .then((res) => res.json())
-      .then((data) => setProductBuffer(data.data))
-
+      const response = await fetch('/api/admin')
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`)
+      }
+      const data = await response.json()
+      setProductBuffer(data) // lưu dữ liệu vào state
     } catch (error) {
-      console.log("Lỗi khi truy xuất products: ", error)
+      console.error("Lỗi khi truy xuất products: ", error)
     }
   }
 

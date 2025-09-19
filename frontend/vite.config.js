@@ -3,5 +3,14 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: './', // quan trọng, để build relative paths
+  base: './', // để build với relative paths
+  server: {
+    proxy: {
+      '/api': {
+        target: 'https://shopee-rho-beryl.vercel.app',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, '')
+      }
+    }
+  }
 });

@@ -78,8 +78,8 @@ const Advertisement = () => {
 
         <div className="categoryAd">
             {
-                listAd.map((item) => (
-                    <Item url={item.url} desc={item.desc}/>
+                listAd.map((item, index) => (
+                    <Item url={item.url} desc={item.desc} key={index}/>
                 ))
             }
         </div>

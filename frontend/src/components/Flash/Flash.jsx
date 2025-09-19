@@ -76,8 +76,8 @@ const Flash = () => {
 
       <div className="element__2">
         {
-            list.map((item) => (
-                <Item url={item.url} price={item.price} discount={item.discount}/>
+            list.map((item, index) => (
+                <Item url={item.url} price={item.price} discount={item.discount} key={index}/>
             ))
         }
       </div>

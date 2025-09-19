@@ -98,8 +98,8 @@ const Helper = () => {
 
       <div className='banner__deal'>
         {
-          listDeal.map((item) => (
-              <Element url={item.url} title={item.title}/>
+          listDeal.map((item, index) => (
+              <Element url={item.url} title={item.title} key={index}/>
           ))
         }
       </div>
