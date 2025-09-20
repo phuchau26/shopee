@@ -1,5 +1,6 @@
 import express from 'express'
 import adminRouter from "./routes/admin.router.js"
+import productRouter from "./routes/product.router.js"
 import {connectDB} from "./config/db.js"
 import dotenv from 'dotenv'
 import cors from 'cors'
@@ -39,6 +40,7 @@ connectDB()
 const port = process.env.PORT || 5001
 
 app.use("/admin", adminRouter)
+app.use("/product", productRouter)
 
 if (process.env.NODE_ENV === 'production'){
     app.use(express.static(path.join(__dirname, "../frontend/dist")))

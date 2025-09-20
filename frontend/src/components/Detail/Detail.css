@@ -1,0 +1,266 @@
+body {
+  background-color: #f5f5f5;
+}
+
+.detail__right .flash__price, .detail__right .flash__end, .detail__right .flash__title p, .detail__left--share .share, .detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail {
+  width: 1200px;
+  margin-top: 500px;
+  background-color: white;
+  justify-content: space-between;
+  padding: 25px;
+}
+.detail__left {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.detail__left img {
+  height: 450px;
+  width: 450px;
+  object-fit: cover;
+}
+.detail__left--listImage {
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.detail__left--listImage img {
+  height: 82px;
+  width: 82px;
+  object-fit: cover;
+  border: 2px solid rgb(255, 255, 255);
+}
+.detail__left--listImage img:hover {
+  border: 2px solid rgb(251, 111, 36);
+}
+.detail__left--share {
+  display: flex;
+  width: 92%;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.detail__left--share .share p {
+  margin: 0;
+  width: max-content;
+  font-size: 18px;
+}
+.detail__left--share .share img {
+  object-fit: contain;
+  height: 25px;
+  background-color: yellow;
+  width: max-content;
+}
+.detail__left--share .fav {
+  display: flex;
+  gap: 10px;
+}
+.detail__left--share .fav .heart {
+  color: rgb(255, 113, 19);
+  font-size: 18px;
+}
+.detail__left--share .fav p {
+  font-size: 18px;
+}
+.detail__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+}
+.detail__right .mall {
+  height: 20px;
+  margin-right: 10px;
+}
+.detail__right p {
+  font-size: 20px;
+  width: 100%;
+}
+.detail__right .listInfo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.detail__right .listInfo__left {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+.detail__right .listInfo__left .rate {
+  font-size: 18px;
+  text-decoration-line: underline;
+  display: flex;
+  gap: 10px;
+}
+.detail__right .listInfo__left .rate img {
+  height: 17px;
+}
+.detail__right .listInfo__left .feed {
+  font-size: 18px;
+  color: #757B7E;
+}
+.detail__right .listInfo__left .feed span {
+  color: black;
+  text-decoration: underline;
+  margin-right: 10px;
+}
+.detail__right .listInfo__left .sale {
+  font-size: 18px;
+  color: #757B7E;
+}
+.detail__right .listInfo__left .sale span {
+  color: black;
+  margin-right: 10px;
+}
+.detail__right .listInfo__right p {
+  font-size: 15px;
+  color: #757B7E;
+  width: max-content;
+}
+.detail__right .flash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+.detail__right .flash__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: linear-gradient(to right, rgb(238, 77, 45), rgb(255, 115, 55));
+  color: white;
+  padding: 10px;
+  padding-inline: 20px;
+}
+.detail__right .flash__title p {
+  width: max-content;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.detail__right .flash__title .clock {
+  font-size: 25px;
+  margin-right: 10px;
+}
+.detail__right .flash__title .countDown {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+}
+.detail__right .flash__title .countDown span {
+  padding-inline: 3px;
+  background-color: black;
+  color: white;
+  height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+.detail__right .flash__end {
+  font-size: 20px;
+}
+.detail__right .flash img {
+  height: 20px;
+}
+.detail__right .flash__price {
+  background-color: #FAF2F0;
+  width: 100%;
+  padding: 20px;
+  justify-content: start;
+}
+.detail__right .flash__price span {
+  color: #ee4d2d;
+  font-size: 35px;
+}
+.detail__right .flash__price .dong {
+  color: #ee4d2d;
+  font-size: 25px;
+  text-decoration: underline;
+  margin-right: 20px;
+}
+.detail__right .flash__price .price--inner {
+  display: flex;
+  gap: 5px;
+}
+.detail__right .flash__price p {
+  color: #757B7E;
+  text-decoration: line-through;
+  display: flex;
+  width: max-content;
+  margin-right: 20px;
+}
+.detail__right .flash__price p .dong2 {
+  font-size: 18px;
+  margin-left: 3px;
+}
+.detail__right .flash__price .discount {
+  color: #ee4d2d;
+  background-color: #fedddd;
+  border-radius: 2px;
+}
+.detail__right .shipment {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+.detail__right .shipment .title {
+  color: #757B7E;
+  text-transform: capitalize;
+}
+.detail__right .shipment img {
+  height: 25px;
+}
+.detail__right .shipment .date {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.detail__right .shipment__info {
+  display: flex;
+  gap: 10px;
+}
+.detail__right .shipment .ship {
+  color: #219797;
+  font-size: 18px;
+}
+.detail__right .shipment .voucher {
+  color: #757B7E;
+}
+.detail__right .guaranty {
+  display: flex;
+}
+.detail__right .guaranty__title {
+  text-transform: capitalize;
+  color: #757B7E;
+  width: 100px;
+}
+.detail__right .guaranty .process {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-left: 30px;
+}
+.detail__right .guaranty .process span {
+  font-size: 16px;
+}
+.detail__right .guaranty .process #shield {
+  color: #ee4d2d;
+  font-size: 25px;
+}
+
+/*# sourceMappingURL=Detail.css.map */
