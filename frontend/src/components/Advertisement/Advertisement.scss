@@ -76,7 +76,7 @@
     }
 }
 
-.ItemAd{
+.categoryAd .ItemAd{
 
     width: max-content;
     display: flex;
@@ -86,6 +86,7 @@
     position: relative;
     margin-top: 10px;
     margin-bottom: 20px;
+    height: 220px;
 
     & img{
         width: 200px;
@@ -97,7 +98,7 @@
         position: absolute;
         width: max-content;
 
-        bottom: 10px;
+        bottom: 0px;
         left: 50%;
         transform: translateX(-50%);
     }

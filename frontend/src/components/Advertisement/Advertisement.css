@@ -62,7 +62,7 @@
   flex-wrap: wrap;
 }
 
-.ItemAd {
+.categoryAd .ItemAd {
   width: max-content;
   display: flex;
   flex-direction: column;
@@ -71,20 +71,21 @@
   position: relative;
   margin-top: 10px;
   margin-bottom: 20px;
+  height: 220px;
 }
-.ItemAd img {
+.categoryAd .ItemAd img {
   width: 200px;
 }
-.ItemAd span {
+.categoryAd .ItemAd span {
   font-size: 20px;
   color: rgb(229, 31, 31);
   position: absolute;
   width: max-content;
-  bottom: 10px;
+  bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
 }
-.ItemAd:hover {
+.categoryAd .ItemAd:hover {
   cursor: pointer;
 }
 
