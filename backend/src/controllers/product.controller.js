@@ -3,7 +3,7 @@ import Product from "../models/Product.js"
 export const getProduct =  async (req,res) => {
     try {
         const products = await Product.findOne({
-            _id: "68ca7cab6098d78dca359cc6"
+            _id: req.params.id
         });
         res.status(200).json(products)
     } catch (error) {

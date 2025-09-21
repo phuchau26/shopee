@@ -62,6 +62,14 @@ const Detail = (props) => {
       alert('Thanh toán thành công!');
       setShowModal(false);
     };
+
+    const listMini = [
+      "https://down-vn.img.susercontent.com/file/6d6e624ea47cbafd075eb1b06c405888@resize_w82_nl.webp",
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lyyneah164rlca@resize_w82_nl.webp",
+      "https://down-vn.img.susercontent.com/file/9e6ec674f7e09f3d47dfb90626e86a9f@resize_w82_nl.webp",
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-ljwdxab0756q30@resize_w82_nl.webp",
+      "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-ljwdxab08jr6d6@resize_w82_nl.webp"
+    ]
  
   return (
     <div className='detail'>
@@ -70,8 +78,12 @@ const Detail = (props) => {
           <img src={props.data.url} alt="" />
           <div className="detail__left--listImage">
             {
-              Array.isArray(props.data.listMini) && props.data.listMini.length > 0 &&
-              props.data.listMini.map((item, index) => (
+              // Array.isArray(props.data.listMini) && props.data.listMini.length > 0 &&
+              // props.data.listMini.map((item, index) => (
+              //   <Mini key={index} url={item} />
+              // ))
+
+             listMini.map((item, index) => (
                 <Mini key={index} url={item} />
               ))
             }
@@ -79,7 +91,7 @@ const Detail = (props) => {
           <div className="detail__left--share">
             <div className="share">
               <p>Chia sẻ: </p>
-              <img src="./icon-social-media.png" alt="" />
+              <img src="/icon-social-media.png" alt="" />
             </div>
             <div className="fav">
               <FaRegHeart className='heart'/>

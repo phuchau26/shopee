@@ -33,7 +33,7 @@ const Header = () => {
   
         <div className="shop">
           <div className="shop__left">
-            <a href="./"><img src="./Shopee.png" alt=""/></a>
+            <a href="/"><img src="/Shopee.png" alt=""/></a>
           </div>
           <div className="shop__mid">
             <div className="inner">
