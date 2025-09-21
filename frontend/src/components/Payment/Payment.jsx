@@ -42,7 +42,7 @@ const Payment = ({ show, onClose, onConfirm }) => {
             </span>
             <p>để được áp dụng ưu đãi !!!</p>
         </div>
-        <img src="./qr.png" alt="" />
+        <img src="/qr.png" alt="" />
         <p id='content'>{"Nội dung chuyển khoản: [Mã đơn hàng] – [Họ tên người nhận] – [Số điện thoại]"}</p>
         <p id='vidu'>Ví dụ: DH0925 – Nguyễn Phúc Hậu – 0901234567</p>
         <div id="luuy">* Lưu ý: Vui lòng kiểm tra chính xác số tiền thanh toán và nội dung ghi chú. Mọi giao dịch sai lệch sẽ không được hoàn trả.</div>
