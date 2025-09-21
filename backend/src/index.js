@@ -35,9 +35,7 @@ app.use(cors({
   credentials: true
 }))
 
-
 connectDB()
-const port = process.env.PORT || 5001
 
 app.use("/admin", adminRouter)
 app.use("/product", productRouter)

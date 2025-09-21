@@ -1,8 +1,9 @@
+@charset "UTF-8";
 body {
   background-color: #f5f5f5;
 }
 
-.detail__right .flash__price, .detail__right .flash__end, .detail__right .flash__title p, .detail__left--share .share, .detail {
+.detail__right .buy #buy, .detail__right .buy #addCart, .detail__right .quantity input, .detail__right .quantity button, .detail__right .quantity, .detail__right .color__element, .detail__right .color__list, .detail__right .size__element, .detail__right .size__list, .detail__right .flash__price, .detail__right .flash__end, .detail__right .flash__title p, .detail__left--share .share, .detail {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +11,7 @@ body {
 
 .detail {
   width: 1200px;
-  margin-top: 500px;
+  margin-top: 140px;
   background-color: white;
   justify-content: space-between;
   padding: 25px;
@@ -18,9 +19,10 @@ body {
 .detail__left {
   width: 40%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 150px;
 }
 .detail__left img {
   height: 450px;
@@ -261,6 +263,169 @@ body {
 .detail__right .guaranty .process #shield {
   color: #ee4d2d;
   font-size: 25px;
+}
+.detail__right .size {
+  display: flex;
+  margin-top: 50px;
+}
+.detail__right .size__title {
+  color: #757B7E;
+}
+.detail__right .size__list {
+  justify-content: start;
+  margin-left: 100px;
+  gap: 20px;
+}
+.detail__right .size__element {
+  height: 40px;
+  width: 80px;
+  border: #d4d4d4 1px solid;
+  position: relative;
+  font-size: 13px;
+}
+.detail__right .size__element:hover {
+  border: 1px solid #ee4d2d;
+  cursor: pointer;
+}
+.detail__right .size .active {
+  border: 1px solid #ee4d2d;
+}
+.detail__right .size .active::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 0 21px 21px;
+  border-color: transparent transparent #FF4532 transparent;
+  transform: rotate(0deg);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.detail__right .size .active::after {
+  content: "✓";
+  position: absolute;
+  bottom: 0;
+  right: 2px;
+  color: white;
+  font-size: 10px;
+}
+.detail__right .color {
+  display: flex;
+  margin-top: 50px;
+}
+.detail__right .color__title {
+  color: #757B7E;
+}
+.detail__right .color__list {
+  justify-content: start;
+  margin-left: 70px;
+  gap: 20px;
+}
+.detail__right .color__element {
+  height: 40px;
+  width: 80px;
+  border: #d4d4d4 1px solid;
+  position: relative;
+  font-size: 13px;
+}
+.detail__right .color__element:hover {
+  border: 1px solid #ee4d2d;
+  cursor: pointer;
+}
+.detail__right .color .active {
+  border: 1px solid #ee4d2d;
+}
+.detail__right .color .active::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 0 21px 21px;
+  border-color: transparent transparent #FF4532 transparent;
+  transform: rotate(0deg);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.detail__right .color .active::after {
+  content: "✓";
+  position: absolute;
+  bottom: 0;
+  right: 2px;
+  color: white;
+  font-size: 10px;
+}
+.detail__right .quantity {
+  justify-content: start;
+  margin-top: 40px;
+}
+.detail__right .quantity__title {
+  color: #757B7E;
+  margin-right: 60px;
+}
+.detail__right .quantity__adjust {
+  display: flex;
+}
+.detail__right .quantity button {
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  border: 1px solid #c0c0c0;
+  color: #757B7E;
+  font-size: 20px;
+}
+.detail__right .quantity button:hover {
+  cursor: pointer;
+}
+.detail__right .quantity button:disabled {
+  color: #cacaca;
+  border: 1px solid #d9d9d9;
+}
+.detail__right .quantity button:disabled:hover {
+  cursor: default;
+}
+.detail__right .quantity input {
+  background-color: white;
+  border: 1px solid #c0c0c0;
+  padding-left: 20px;
+  width: 50px;
+  color: #ee4d2d;
+}
+.detail__right .buy {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+.detail__right .buy #addCart {
+  background-color: #FFEEE8;
+  border: 1px solid #ee4d2d;
+  color: #ee4d2d;
+  text-transform: capitalize;
+  font-size: 15px;
+  padding-block: 15px;
+  padding-inline: 30px;
+}
+.detail__right .buy #addCart #cart {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.detail__right .buy #addCart:hover {
+  background-color: white;
+  cursor: pointer;
+}
+.detail__right .buy #buy {
+  background-color: #ee4d2d;
+  border: 1px solid #ff4f2c;
+  color: white;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: bold;
+  padding-block: 15px;
+  padding-inline: 40px;
+}
+.detail__right .buy #buy:hover {
+  background-color: #ea6044;
 }
 
 /*# sourceMappingURL=Detail.css.map */

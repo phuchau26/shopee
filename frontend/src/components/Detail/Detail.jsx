@@ -5,6 +5,8 @@ import { FaRegHeart } from "react-icons/fa";
 import { CiClock2 } from "react-icons/ci";
 import {useState, useEffect} from 'react'
 import { GoShieldCheck } from "react-icons/go";
+import { BsCartPlus } from "react-icons/bs";
+import Payment from '../Payment/Payment';
 
 const Detail = (props) => {
 
@@ -28,6 +30,38 @@ const Detail = (props) => {
     };
 
     const { h, m, s } = formatTime(timeLeft);
+
+
+    const [sizeIndex, setSizeIndex] = useState(null)
+    const handleClickSize = (index) => {
+      setSizeIndex(index)
+    }
+
+    const [colorIndex, setColorIndex] = useState(null)
+    const handleClickColor = (index) => {
+      setColorIndex(index)
+    }
+
+    const color = ["Đen", "Trắng", "Hồng sen", "Đỏ đô", "Kem"]
+
+    const [quantity, setQuantity] = useState(1)
+    const handleMinus = () => {
+      if (quantity > 1){
+        setQuantity(quantity-1)
+      }
+    }
+
+    const handlePlus = () => {
+      setQuantity(quantity+1)
+    }
+
+    const [showModal, setShowModal] = useState(false);
+
+    const handleConfirm = () => {
+      // Xử lý logic thanh toán ở đây
+      alert('Thanh toán thành công!');
+      setShowModal(false);
+    };
  
   return (
     <div className='detail'>
@@ -124,6 +158,61 @@ const Detail = (props) => {
               <span>Miễn phí vận chuyển</span>
             </div>
           </div>
+
+          <div className="size">
+            <div className="size__title">Size</div>
+            <div className="size__list">
+              {
+                [...Array(5)].map((_, index) => (
+
+                  <div className={`size__element ${index==sizeIndex?"active":""}`}
+                    onClick={() => handleClickSize(index)}
+                  >
+                    {`Size ${index+1}`}
+                  </div>
+
+                ))
+              }
+            </div>
+          </div>
+
+          <div className="color">
+            <div className="color__title">Màu sắc</div>
+            <div className="color__list">
+              {
+                color.map((item, index) => (
+
+                  <div className={`color__element ${index==colorIndex?"active":""}`}
+                    onClick={() => handleClickColor(index)}
+                  >
+                    {item}
+                  </div>
+
+                ))
+              }
+            </div>
+          </div>
+
+          <div className="quantity">
+            <div className="quantity__title">Số Lượng</div>
+            <div className="quantity__adjust">
+              <button className='minus' onClick={handleMinus} disabled={quantity === 1}>-</button>
+              <input type="number" value={quantity}/>
+              <button className='plus' onClick={handlePlus}>+</button>
+            </div>
+          </div>
+
+          <div className="buy">
+            <button id='addCart'><BsCartPlus id='cart'/> thêm vào giỏ hàng</button>
+            <button id='buy' onClick={() => setShowModal(true)}>Mua ngay</button>
+            <Payment
+              show={showModal}
+              onClose={() => setShowModal(false)}
+              onConfirm={handleConfirm}
+            />
+
+          </div>
+              
         </div>
       
     </div>

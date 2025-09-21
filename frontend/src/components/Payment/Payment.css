@@ -1,0 +1,161 @@
+/* Payment.css */
+.payment-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.4); /* làm mờ nền */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.payment-container {
+  position: relative;
+  width: 800px;
+  max-width: 90%;
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  animation: fadeIn 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Nút X để đóng */
+.payment-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+img {
+  height: 400px;
+  object-fit: contain;
+}
+
+h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #ef4624;
+}
+
+.uudai{
+  margin-top: 20px;
+  display: flex;
+}
+
+.uudai p{
+  width: max-content;
+  margin-inline: 10px;
+}
+
+.payment-close:hover {
+  color: #000;
+}
+
+#buy {
+  background-color: #ee4d2d;
+  border: 1px solid #ff4f2c;
+  color: white;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: bold;
+
+  @extend %center;
+  padding-block: 15px;
+  padding-inline: 40px;
+  border-radius: 5px;
+
+}
+
+#luuy{
+  margin-top: 50px;
+  color: rgb(211, 9, 9);
+  width: 80%;
+}
+
+.countDown {
+  display: flex;
+  gap: 10px;
+}
+
+
+
+.countDown span {
+  padding-inline: 3px;
+  background-color: black;
+  color: white;
+  height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+#content {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 8px;
+  padding: 10px 14px;
+  margin-top: 20px;
+  margin-left: 70px;
+}
+
+#vidu {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 8px;
+  padding: 10px 14px;
+  font-weight: bold;
+  margin-left: 70px;
+}
+
+.button{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+#cancel{
+  background-color: #ed2727;
+  border: 1px solid #ff4f2c;
+  color: white;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: bold;
+
+  @extend %center;
+  padding-block: 15px;
+  padding-inline: 40px;
+  border-radius: 5px;
+}
+
+#buy:hover{
+  background-color: #ea6044;
+}
+
+/* Hiệu ứng mờ */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}

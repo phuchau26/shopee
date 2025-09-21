@@ -3,6 +3,7 @@ import {useState, useEffect} from 'react'
 import Header from '../../components/Header/Header'
 import Detail from '../../components/Detail/Detail'
 
+
 const Product = () => {
 
   const [productBuffer, setProductBuffer] = useState({})
@@ -13,7 +14,7 @@ const Product = () => {
   
     const fetchProducts = async () => {
       try {
-        const response = await fetch('http://localhost:5001/product')
+        const response = await fetch('https://shopee-rho-beryl.vercel.app/product')
   
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`)
