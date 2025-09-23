@@ -4,39 +4,9 @@ import Item from './Item'
 import {useState, useEffect} from 'react'
 
 
-const Flash = () => {
-    const list = [
-        {
-            url: "https://down-vn.img.susercontent.com/file/cn-11134207-7ras8-m84gpopqji8td2_tn",
-            price: "84.700",
-            discount: 45
-        },
-        {
-            url: "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m9zsat7xhi562f_tn",
-            price: "14.900",
-            discount: 28
-        },
-        {
-            url: "https://down-vn.img.susercontent.com/file/sg-11134301-7ratq-ma2bk1hy6jx849_tn",
-            price: "42.500",
-            discount: 46
-        },
-        {
-            url: "https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m9zmtw4ti8ucfa_tn",
-            price: "20.900",
-            discount: 19
-        },
-        {
-            url: "https://down-vn.img.susercontent.com/file/sg-11134201-7rd5t-m7tb31jnn95g73_tn",
-            price: "29.900",
-            discount: 60
-        },
-        {
-            url: "https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mefa4cy7tlabb7_tn",
-            price: "68.000",
-            discount: 52
-        },
-    ]
+const Flash = (props) => {
+    //Lấy 6 phần tử đầu tiên của props.product
+    const list = props.product.slice(0, 6);
 
     // đặt thời gian ban đầu (ví dụ 2 giờ = 7200 giây)
     const [timeLeft, setTimeLeft] = useState(2 * 60 * 60);
@@ -77,7 +47,7 @@ const Flash = () => {
       <div className="element__2">
         {
             list.map((item, index) => (
-                <Item url={item.url} price={item.price} discount={item.discount} key={index}/>
+                <Item url={item.url} price={item.price} discount={item.discount} key={index} id={item._id}/>
             ))
         }
       </div>

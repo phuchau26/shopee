@@ -38,7 +38,7 @@ function Home() {
       <Helper/>
        <div className="body">
           <Category/>
-          <Flash/>
+          <Flash product={productBuffer}/>
           <Advertisement/>
           <Top/>
           <Today productList={productBuffer}/>
